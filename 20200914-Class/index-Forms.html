@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Forms in HTML5</title>
+    </head>
+    <body>
+        <!-- form tags which go inside body in order to appear in the page -->
+        <form method="POST" action="">
+            Name: <input type="text" name="name">
+            <br><br>
+            Email: <input type="email" name="email">
+            <br><br>
+            Message: <textarea name="msg" rows=5 cols=25></textarea>
+            <br><br>
+            <input type="submit" value="Send Me">
+        </form>
+
+        <hr>
+
+        <form>
+            <p>
+				<label for="clName">Client Name:</label>
+				<input type="text" name="clName">
+			</p>
+			<p>
+				<label for="email">Email:</label>
+				<input type="email" name="email">
+			</p>
+			<p>
+				<label for="age">Age:</label>
+				<input type="number" name="age" >
+			</p>
+			<p>
+				<label for="pass">Password:</label>
+				<input type="password" name="pass">
+			</p>
+			<p>
+				<label for="dob">DOB</label>
+				<input type="date" name="dob">
+			</p>
+			<p>What is your gender?</p>
+			<p>
+				<label for="female">Female</label>
+				<input type="radio" name="gender">
+				<br>
+				<label for="male">Male</label>
+				<input type="radio" name="gender">
+			</p>
+			
+			<p>How satisfied were you with our services?</p>
+			<p>
+				<label for="vSatisfy">Very Satisfy</label>
+				<input type="checkbox" name="vSatisfy">
+				<br>
+				<label for="satisfy">Satisfy</label>
+				<input type="checkbox" name="satisfy">
+				<br>
+				<label for="dSatisfy">Dissatisfy</label>
+				<input type="checkbox" name="dSatisfy">
+			</p>
+			<p>
+				<label for="cmt">Comment</label>
+				<textarea name="cmt"></textarea>
+			</p>
+			<p>
+				<label>Location</label>
+				<select>
+					<option></option>
+					<option>Canada</option>
+					<option>USA</option>
+					<option>UK</option>
+				</select>
+			</p>
+			<p>
+				<label>City</label>
+				<select size="3">
+
+					<option>Montreal</option>
+					<option>Chicago</option>
+					<option>London</option>
+				</select>
+			</p>
+			<p>
+				<label for="photo">Bio Photo</label>
+				<input type="file" name="photo">
+			</p>
+			<p>
+				<input type="submit" value="Sign-In">
+			</p>
+			<p>
+				<input type="reset" value="Reset">
+			</p>
+
+        </form>
+    </body>
+</html>
