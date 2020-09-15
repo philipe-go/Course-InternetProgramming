@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tables in HTML5</title>
+        <!-- CSS code -->
+        <style>
+			td, th{
+				border:1px solid red;
+			}
+        </style>
+    </head>
+    <body>
+        <!-- Table without header only rows -->
+        <h3> Table presentation - With rows </h3>
+        <table>
+            <tr>
+                <td>No.</td>
+                <td>Name</td>
+                <td>Department</td>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>Philipe</td>
+                <td>Machine Learning</td>
+            </tr>
+            <tr>
+                <td>200</td>
+                <td>Lucy</td>
+                <td>Marine Management</td>
+            </tr>
+        </table>
+
+        <hr>
+        <!-- Table with header (<th></th>)  -->
+        <h3> Table presentation - With header </h3>
+        <table>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Department</th>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>Philipe</td>
+                <td>Machine Learning</td>
+            </tr>
+            <tr>
+                <td>200</td>
+                <td>Lucy</td>
+                <td>Marine Management</td>
+        </table>
+
+        <hr>
+
+        <!-- Table in HTML 5 -->
+        <h3> Table presentation - html5 </h3>
+        <table>
+            <caption>This is a table in HTML 5</caption>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>100</td>
+                    <td>Philipe</td>
+                    <td>Machine Learning</td>
+                    <td rowspan="2">Longueuil</td>
+                </tr>
+                <tr>
+                    <td>200</td>
+                    <td>Lucy</td>
+                    <td>Marine Management</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <!-- colspan is used to span below line into 3 columns - We can use rowspan as above -->
+                    <td colspan="4"> Copyright &copy; by Philipe Gouveia</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
