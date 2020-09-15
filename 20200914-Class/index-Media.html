@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <Title>Media in HTML5</Title>
+        <!-- CSS Code -->
+        <style>
+			body{
+				background-image:url('./media/img-5.jpg');
+			}
+        </style>
+    </head>    
+    <body>
+        <!-- Image insertion as before HTML 5 -->
+        <!-- We add a <p></p> so the image blocks the line instead of being an INLINE element -->
+        <p><img src = './media/img-1.jpg' title="Summer in Montreal" alt="Image not found" height="300px" width="500px"></p>
+        
+        <!-- Image insertion as per HTML5 -->
+        <figure>
+            <figcaption>Summer in Montreal</figcaption>
+            <img src="./media/img-2.jpg" title="Summer in Montreal" alt="Image not found">
+        </figure>
+
+        <!-- Audio and Video per HTML5 -->
+        <!-- option that can be inserted in the media: controls, autoplay, loop and muted -->
+        <video controls>
+            <source src="./media/Diamonds.mp4" type="video/mp4">
+        </video>
+        <!-- option inserted in the audio to control, autoplay at start, loop and start muted -->
+        <p></p>
+        <audio controls autoplay loop muted>
+            <source src="./media/song.mp3" type="sound/mpeg">
+        </audio>
+    </body>
+</html>
