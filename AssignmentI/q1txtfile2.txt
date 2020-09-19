@@ -1,0 +1,8 @@
+this is the text file for the question 2 part 1
+
+About Page: 
+
+Student: Philipe Gouveia
+ID: 1910072
+Program: Computer Science - Video Game Programming
+Subject: Assignment 1
