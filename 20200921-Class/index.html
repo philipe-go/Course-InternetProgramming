@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lan="en">
+    <head>
+        <meta charset = "UTF-8">
+        <title> CSS and HTML </title>
+        <!-- CSS syntax -->
+        <!-- property name: value; if more than one we use a block {} -->
+        <!-- INTERNAL CSS -->
+        <!-- If we dont change properties which are presented in bigger declarations it is 
+        gona use the bigger tag declaration, for instance the text-decoration below -->
+        <style>
+            /* p is the bigger tag therefore it overrides non-present properties from ids and classes */
+            p {color: blue; font-size: 25px; text-decoration: underline;} 
+            .my_para{ color:coral; font-size:45px; text-decoration: none; font-style: italic; }
+            #para-1{color:green; font-size: 35px; font-weight: bold; }
+        </style>
+        <!-- EXTERNAL CSS -->
+        <!-- This is the most profissional way to do it -->
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+    </head>
+    <body>
+        <div>
+            <!-- INLINE CSS - not so efficient because of repetition -->
+            <!-- what is presented in the INLINE overrides the INTERNAL CSS -->
+            <p style="color:Red;font-size:25px;">This is the test1</p>
+            <p>This is the test 2</p>
+        </div>
+        <div>
+            <p id="para-1"> This is the test 3 </p>
+        </div>
+        <div>
+            <p class="my_para"> This is the test 4 </p>
+        </div>
+        
+
+    </body>
+</html>

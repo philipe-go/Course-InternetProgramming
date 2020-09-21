@@ -1,0 +1,3 @@
+body { background-color: lightblue; }
+/* this one will be priorityzed to the INTERNAL CSS as in the html file the link line comes after the style line*/
+#para-1{color:green; font-size: 55px; font-weight: bold; }

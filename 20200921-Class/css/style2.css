@@ -1,0 +1,68 @@
+body{
+    /* #F5F5F5 or #555 */
+    background-color:lightcyan;
+    color: #555555;
+    /* it checks for the first font, if-not the second, if-not the third, ... */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* px - cm - em - % - in */
+    font-size: 16px;
+    /* em = x.x bigger than default size */
+    line-height: 1.6em;
+    font-weight: inherit;
+    margin:100px;
+}
+
+.container{
+    /* percentage is ideal so it adjusts along with the margin */
+    width: 70%;
+    /* auto is to make the margins fits on the screen size (browser) */
+    margin: auto;
+}
+
+/*
+.box-1{
+    #########long way###########
+    border-top-color: red;
+    border-top-style: solid;
+    border-top-width: 5px;
+
+    border-right-color: blue;
+    border-right-style: dashed;
+    border-right-width: 6px;
+
+    border-bottom-color: green;
+    border-bottom-style: dotted;
+    border-bottom-width: 6px;
+
+    border-left-color: orange;
+    border-left-style: solid;
+    border-left-width: 5px; 
+    
+    ##########good way#########
+    border-top: 4px solid red;
+    border-bottom: 4px solid orange;
+    border-right: 6px outset blue;
+    border-left: 6px outset green; 
+    
+    #######general way########
+    border-color: red;
+    border-style: outset;
+    border-width: 5px;
+    border:5px outset red;
+    
+
+    padding-top: 400px;
+    padding-right: 300px;
+    padding-bottom:200px;
+    padding-left:100px;
+
+    Top - Right - Bottom - Left
+    padding: 100px 200px 200px 200px;
+    Top/Bottom - Left/Right
+    padding: 200px 300px;
+    Top/Bottom/Left/Right
+    padding: 100px;
+
+    margins follows the similar syntax of padding
+    margin:100px;
+} */
