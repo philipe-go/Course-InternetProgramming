@@ -19,8 +19,22 @@ body{
     margin: auto;
 }
 
-/*
+a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+a:hover{ color:red; }
+a:active{ color:green; }
+a:visited{ color:yellowgreen;}
+
 .box-1{
+    background-color:#333333;
+    color:#fff;
+    border:5px solid red;
+    padding: 20px;
+    margin: 20px 0;
+    /*
     #########long way###########
     border-top-color: red;
     border-top-style: solid;
@@ -50,19 +64,93 @@ body{
     border-width: 5px;
     border:5px outset red;
     
-
     padding-top: 400px;
     padding-right: 300px;
     padding-bottom:200px;
     padding-left:100px;
 
-    Top - Right - Bottom - Left
+    ##Top - Right - Bottom - Left##
     padding: 100px 200px 200px 200px;
-    Top/Bottom - Left/Right
+    #Top/Bottom - Left/Right#
     padding: 200px 300px;
-    Top/Bottom/Left/Right
+    #Top/Bottom/Left/Right#
     padding: 100px;
 
     margins follows the similar syntax of padding
-    margin:100px;
-} */
+    margin:100px; 
+    */
+}
+
+/* target a tag inside a class */
+.box-1 h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    word-spacing: 1em;
+}
+
+#box-2 {
+    border: 3px inset gray;
+    padding: 20px;
+    margin:20px 0;
+    background-color: lightgoldenrodyellow;
+}
+
+.categories{
+    border:3px inset blue;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.categories h2{
+    text-align: center;
+    font-size: 1em;
+}
+
+.categories ul{
+    padding-left: 20px;
+    list-style: none;
+}
+
+.categories li{
+    padding-bottom: 1em;
+    border-bottom: 1px solid lightgray;
+    list-style-image: url("../media/facebook.png");
+}
+
+#myForm{
+    padding: 20px;
+}
+
+.form-group{
+    padding-bottom:15px;
+}
+
+#myForm label{
+    display:block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#myForm input[type="text"], #myForm textarea{
+    padding: 8px;
+    width: 100%
+}
+
+/* this was changed to class in order to apply for many elements - USABILITY */
+.btn{
+    background-color: gray;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-transform: uppercase;
+    padding: 15px 45px;
+    margin-left: 43%;
+}
+.btn:hover{ 
+    cursor: pointer; 
+    background-color: lightblue;
+    color: black;
+    font-weight: bold;
+}
