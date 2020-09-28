@@ -1,0 +1,11 @@
+body {
+    background-color: aliceblue;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* GENERAL COMBINATOR - to format any tag wich is neighbor */
+/* a good way to avoid creating class all the time */
+h2 ~ p{
+    color: red;
+}

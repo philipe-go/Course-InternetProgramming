@@ -1,0 +1,11 @@
+body {
+    background-color: aliceblue;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* CHILD COMBINATOR - to format any tag wich is child from reference */
+/* a good way to avoid creating class all the time */
+div > p{
+    color: red;
+}

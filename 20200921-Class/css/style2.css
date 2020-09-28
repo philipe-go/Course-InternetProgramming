@@ -145,7 +145,7 @@ a:visited{ color:yellowgreen;}
     border: 1px solid black;
     border-radius: 10px;
     text-transform: uppercase;
-    padding: 15px 45px;
+    padding: 25px 50px;
     margin-left: 43%;
 }
 .btn:hover{ 
@@ -153,4 +153,75 @@ a:visited{ color:yellowgreen;}
     background-color: lightblue;
     color: black;
     font-weight: bold;
+}
+
+.block{
+    width: 33.3%;
+    float: left;
+    padding: 20px;
+    border: 1px dashed gray;
+    box-sizing:border-box;
+}
+
+.clr{
+    clear: both;
+}
+
+#main-bar{
+    float: left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #fff;
+
+}
+
+#side-bar{
+    float: right;
+    width: 30%;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: gray;
+    color: white;
+}
+
+#p-box{
+    width: 800px;
+    height: 500px;
+    border: 1px solid black;
+    background-image: url("https://cdn.wallpapersafari.com/86/49/KzqSU0.jpg");
+    margin-top: 10px;
+    position: relative;
+}
+
+#p-box h1{
+    position: absolute;
+    top: 400px;
+    left: 100px;
+}
+
+#p-box h2{
+    position: absolute;
+    top: 400px;
+    right: 100px;
+}
+
+.fix-me{
+    position: fixed;
+    top:200px;
+    padding: 10px 25px;
+    margin-left: 1px;
+}
+
+#my-list li:nth-child(even){
+    background-color: yellow;
+}
+#my-list li:nth-child(odd){
+    background-color: gray;
+}
+#my-list li:first-child{
+    background-color: red;
+}
+#my-list li:last-child{
+    background-color: blue;
 }

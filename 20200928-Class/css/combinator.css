@@ -1,0 +1,11 @@
+body{
+    background-color: blanchedalmond;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* ADJACENT COMBINATOR - Format paragraphs which are adjacent to any h2 */
+/* a good way to avoid creating class all the time */
+h2 + p{
+    color: red;
+}

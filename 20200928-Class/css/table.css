@@ -1,0 +1,36 @@
+body{
+    background-color: bisque;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Tahoma', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.4em;
+}
+
+table{
+    width: 80%;
+    margin: auto;
+    background-color: antiquewhite;
+    border: 1px solid brown;
+    /* collapse border to not have it separated */
+    border-collapse: collapse;
+}
+
+td, th{
+    border-bottom: 1px solid brown;
+    padding: 6px 16px;
+    text-align: center;
+}
+
+th{
+    background-color:lightgray;
+}
+
+caption{
+    background-color: gray;
+    margin: 0;
+    border: 1px solid brown;
+    padding: 6px 16px;
+    font-weight: bold;
+    border-bottom: none;
+}
