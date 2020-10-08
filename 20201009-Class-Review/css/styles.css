@@ -68,7 +68,7 @@ ul{
     padding: 16px;
 }
 
-.foo{
+.full{
     grid-column: 1/3;
 }
 
