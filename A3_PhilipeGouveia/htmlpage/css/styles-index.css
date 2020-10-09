@@ -1,0 +1,104 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container{
+    width: auto;
+    margin: auto;
+}
+
+header{
+    background-color: black;
+    color: white;
+    margin: auto;
+    min-height: 50px;
+}
+
+nav{
+    float:right;
+    margin-top: 15px;
+}
+
+.btn{
+    background-color: transparent;
+    height: 40px;
+    width: auto;
+    color:gray;
+    border: 2px solid #8f746c;
+    padding: 7px 2.5em;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color: #8f746c;
+    color:white;
+    cursor: pointer;
+}
+
+header .btn{
+    border: none;
+}
+
+header a:hover{
+    border-radius: 5px;
+}
+
+#banner{
+    background-image: url("../media/lead-banner.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 700px;
+}
+
+#main-body{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.item-title{
+    font-size: 1.3em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.price{
+    font-weight: normal;
+    font-size: 5.0em;
+    margin: 0 50px 30px 50px;
+}
+
+.about{
+    font-weight: normal;
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+form{
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: cyan;
+    line-height: 2em;
+}
+
+footer p{
+    background-image: url("../media/footer.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 700px;
+}
+
+@media(max-width: 1000px){
+    footer p, #banner{
+        min-height: 300px;
+    }
+    header{
+        height: 120px;
+        text-align: center;
+        line-height: 2em;
+    }
+}
