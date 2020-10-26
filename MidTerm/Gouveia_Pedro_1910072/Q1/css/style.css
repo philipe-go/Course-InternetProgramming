@@ -1,0 +1,107 @@
+body{
+    background-color: whitesmoke;
+}
+
+.container{
+    background-color: #ffff00;
+    width: 75%;
+    margin: auto;
+    padding: 20px;
+    overflow: hidden;
+    border-style: outset;
+}
+
+header{
+    background-color: #ffff99;
+    border-style: outset;
+}
+
+header div{
+    border-style: outset;
+    width: 98%;
+    margin: auto;
+    text-align: center;
+}
+
+header p{
+    padding: 0;
+    margin: .5em;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.center-page{
+    background-color: #ffff99;
+    border-style: outset;
+    min-height: 250px;
+    font-size: 20px;
+    
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+}
+
+#left-form{
+    background-color:  #ffff00;
+    padding: 0;
+    margin: .5em;
+    border-style: outset;
+    font-weight: bold;
+}
+
+#middle-form, #right-form{
+    background-color:  #ffff00;
+    margin: .5em;
+    padding: 10px 5px;
+    border-style: outset;
+    max-height: 50%;
+}
+
+#left-form div{
+    background-color: #ffff99;
+    border-style: outset;
+    width: 90%;
+    margin: 50px auto;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+#right-form div, #middle-form div{
+    background-color: #ffff99;
+    border-style: outset;
+    width: 75%;
+    height: 85%;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+}
+
+footer{
+    background-color: #ffff99;
+    border-style: outset;
+    min-height: 55px;
+}
+
+footer div{
+    display: inline;
+}
+
+#left-btn{
+    background-color:  #ffff00;
+    padding: 5px;
+    margin: 0.5em;
+    border-style: outset;
+    float: left;
+}
+
+#right-btn{
+    background-color:  #ffff00;
+    padding: 5px;
+    margin: 0.5em;
+    border-style: outset;
+    font-weight: bold;
+    float: right;
+}
+
+
+
+ 

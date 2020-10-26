@@ -1,0 +1,57 @@
+body{
+    background-color:#333333;
+    font-style: "Tahoma", sans-serif;
+}
+
+.container{
+    size: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+header{
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    padding: 20px 0;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    background-color: #333333;
+    border-spacing: 15px 1px;
+}
+tbody{
+    background-color: white;
+}
+
+td, th{
+    padding: 20px 20px;
+}
+
+th{
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}
+
+th:nth-child(2){
+    background-color: #4caf55;
+}
+
+#price, tfoot{
+    background-color: #f4f4f4;
+}
+
+input{
+    color: white;
+    font-weight: bold;
+    background-color: #4caf55;
+    border: none;
+    padding: 10px 5px;
+}
+
+
+
+
