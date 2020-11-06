@@ -1,0 +1,32 @@
+body{
+    background-color: #333;
+}
+
+#container{
+    width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    margin: 0 auto;
+
+    max-height: 320px;
+    overflow:hidden;
+}
+
+#container.open{
+    max-height: 820px;
+}
+
+#show-more{
+    background-color: #1594e5;
+    color: #fff;
+    width: 140px;
+    font-size: 20px;
+    display: block;
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: center;
+    margin: 10px auto;
+    cursor: pointer;
+}
