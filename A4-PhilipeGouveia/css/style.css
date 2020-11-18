@@ -1,0 +1,19 @@
+body{
+    background-color: white;
+}
+
+table{
+    border: solid 1px gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+}
+
+table td, th{
+    border: inset 1px black;
+}
+
+input{
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+
