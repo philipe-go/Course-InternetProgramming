@@ -1,0 +1,26 @@
+form {
+    width: 500px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+label{
+    display: block;
+}
+
+.grp-content{
+    margin: 0 auto;
+}
+
+input{
+    width: 300px;
+    padding: 10px 20px;
+}
+
+input[type="submit"]{
+    width: 340px;
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-top: 30px;
+}
