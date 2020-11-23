@@ -1,0 +1,23 @@
+body {
+    background-color: #f4f4f4;
+    font-family: 17px;
+    line-height: 1.5em;
+}
+
+header{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px #000 solid;
+    margin-bottom: 10px;
+}
+
+#container {
+    width: 90%;
+    margin: auto;
+}
+
+#myClass {
+    background-color: black;
+}
