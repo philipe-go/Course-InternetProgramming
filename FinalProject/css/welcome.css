@@ -76,7 +76,7 @@ header a:hover, div a:hover{
     width: 330px;
 }
 
-.login input:hover{
+.login input:hover, .login input:focus{
     border: 2px rgb(39, 39, 39) solid;
 }
 

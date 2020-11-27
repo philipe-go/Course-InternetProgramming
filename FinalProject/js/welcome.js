@@ -28,7 +28,7 @@ $(document).ready(() => {
 
         if (un == user && ps == password)
         {
-            window.open('./main.html', '_self');
+            window.open('./html/main.html', '_self');
         }
         else 
         {

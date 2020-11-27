@@ -110,6 +110,22 @@ footer a:hover{
 }
 
 table{
-    margin: auto;
+    margin: 30px auto 0 auto;
     text-align: center;
+}
+
+.search {
+    border-radius: 5px 0 0 5px;
+    margin-right: -5px;
+    padding: 10px 150px;
+    border: 0.5px rgb(32, 32, 32) solid;
+}
+
+.search:hover{
+    border: 1px rgb(0, 0, 0) solid;
+    background-color: lightgray;
+}
+
+.searchBtn{
+    border-radius: 0 5px 5px 0;
 }
