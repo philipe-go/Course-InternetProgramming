@@ -5,25 +5,48 @@
     <meta charset="UTF-8">
     <title>Welcome to Phil Go.</title>
     <link rel="stylesheet" type="text/css" href="./css/welcome.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="content">
-        <div class="top"></div>
-        <div class="right"></div>
-        <div class="center">
-            <div class="login">
-                <form>
-                    <input type="text" name="name" placeholder="username">
-                    <input type="password" name="pass" placeholder="password">
-                    <input type="submit" value="log in" class="userlogin">
-                </form>
-            </div>
+    <header>
+        <div id="logo"></div>
+        <div id="buttons">
+            <a id="homeBtn">Home</a>
+            <a id="loginBtn">Login</a>
         </div>
-        <div class="bottom"></div>
-        <div class="left"></div>
+    </header>
+
+    <div class="container">
+        <div class="login">
+            <img src="media/login.png" width="64px" heigh="64px">
+            <br><hr>
+                <form>
+                    <input type="text" name="name" placeholder="username" id="username">
+                    <br>
+                    <input type="password" name="pass" placeholder="password" id="password">
+                    <br>
+                    <a id="userlogin">Login</a>
+                </form>
+                <br><hr>
+                <p id="wrong-user">wrong user or password</p>
+        </div>
+        <div class="welcome">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent turpis tellus, venenatis eget euismod non, tempor in enim. Morbi at vulputate arcu. In ex turpis, placerat nec laoreet eget, vulputate eu ex. Aliquam posuere commodo blandit. Donec vestibulum consectetur arcu, quis vehicula metus suscipit ut. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque tincidunt lacus et semper consequat. Mauris ac felis lacinia, laoreet sapien ut, laoreet enim. Quisque volutpat justo nec tincidunt iaculis. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent turpis tellus, venenatis eget euismod non, tempor in enim. Morbi at vulputate arcu. In ex turpis, placerat nec laoreet eget, vulputate eu ex. Aliquam posuere commodo blandit. Donec vestibulum consectetur arcu, quis vehicula metus suscipit ut. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque tincidunt lacus et semper consequat. Mauris ac felis lacinia, laoreet sapien ut, laoreet enim. Quisque volutpat justo nec tincidunt iaculis. </p>
+        </div>
     </div>
+
+    <footer>
+        <a><img src="./media/welcome/facebook.png" height="32px" width="32px"></a>
+        <a><img src="./media/welcome/instagram.png" height="32px" width="32px"></a>
+        <a><img src="./media/welcome/linkedin.png" height="32px" width="32px"></a>
+        <a><img src="./media/welcome/snapchat.png" height="32px" width="32px"></a>
+        <a><img src="./media/welcome/twitter.png" height="32px" width="32px"></a>
+    </footer>
+
 </body>
 <script src="./js/welcome.js"></script>
+
 </html>
