@@ -1,7 +1,7 @@
 $('.content').hide();
 $('#topBtn').hide();
 
-$(document).ready(()=>{
+$(document).ready(() => {
 
     $('.container').animate({
         width: '100%',
@@ -11,7 +11,8 @@ $(document).ready(()=>{
     $('.content').fadeIn(1500);
     $('#topBtn').fadeIn(1500);
 
-    $("#top").click(()=>{
+    var topBtn = document.querySelectorAll("#topBtn");
+    $(topBtn).click(()=>{
         $('.container').animate({scrollTop:0}, 'slow');
     });
 
@@ -22,30 +23,50 @@ $(document).ready(()=>{
     });
 
     let picture = document.querySelectorAll('#picture');
-    picture.forEach(item =>{
-        item.addEventListener('click',(e)=>{
+    picture.forEach(item => {
+        item.addEventListener('click', (e) => {
             let row = e.target.parentElement.parentElement.parentElement.querySelector('#description-row');
             $(row).toggle();
         });
     });
 
     //SEARCH
-    var searchItem = document.querySelector('.search');
-    console.log(searchItem);
-    searchItem.addEventListener("keyup", (e)=>{
-        let temp = searchItem.value.toLowerCase();
-        let item = list.querySelectorAll('#description-row');
-        console.log(item);
-        item.forEach(item=>{
-            var title = item.firstElementChild.textContent.toLowerCase();
-            if (title.indexOf(temp) != -1)
-            { 
-                item.style.display = "block";
-            }
-            else 
-            {
-                item.style.display = "none";
-            }
-        });
-    })
+    var tempItem;
+    $('.search').click((e) => {
+        e.target.value = "";
+    });
+
+    $('.search').keyup((e) => {
+        tempItem = e.target.value.toLowerCase();
+    });
+
+    $('.searchBtn').click(() => {
+        if (tempItem != null) {
+            var item = document.querySelectorAll('#item-name');
+
+            item.forEach(it => {
+                var title = it.textContent.toLowerCase();
+                if (title.trim() === tempItem.trim()) {
+                    var row = it.parentElement.parentElement;
+                    $(row).show();
+                    $('.search').val("");
+                }
+            });
+        }
+    });
+
+    var btnState = 1;
+    $('.showallBtn').click((e) => {
+        let descriptions = document.querySelectorAll('#description-row');
+        if (btnState == 1) {
+            $(descriptions).show();
+            e.target.textContent = "Hide All";
+            btnState -= 1;
+        }
+        else {
+            $(descriptions).hide();
+            e.target.textContent = "Show All";
+            btnState = 1;
+        }
+    });
 })

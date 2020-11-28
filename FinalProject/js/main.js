@@ -12,7 +12,7 @@ $(document).ready(()=>{
     $('.content').fadeIn(1500);
     $('#topBtn').fadeIn(1500);
 
-    $("#top").click(()=>{
+    $(document).find("#topBtn").click(()=>{
         $('.container').animate({scrollTop:0}, 'slow');
     });
 })

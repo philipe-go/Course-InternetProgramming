@@ -117,7 +117,9 @@ table{
 .search {
     border-radius: 5px 0 0 5px;
     margin-right: -5px;
-    padding: 10px 150px;
+    padding: 15px;
+    height: 9px;
+    width: 400px;
     border: 0.5px rgb(32, 32, 32) solid;
 }
 
@@ -128,4 +130,36 @@ table{
 
 .searchBtn{
     border-radius: 0 5px 5px 0;
+}
+
+#add-cart1, #add-cart2{
+    border-radius: 5px 0 0 5px;
+    margin-right: -2px;
+}
+
+#gallery1-total, #gallery2-total{
+    pointer-events: none;
+    margin: auto;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    text-align: left;
+    width: 60%;
+    height: 35px;
+    padding-left: 15px;
+}
+
+select{
+    width: 90px;
+}
+
+#total-table, #payment-table{
+    width: 100%;
+}
+
+#total-row{
+    align-items: left;
+}
+
+#total-table th{
+    font-size: 20px;
 }

@@ -25,32 +25,44 @@
     <div class="container">
         <div class="content">
             <h1>Invoice</h1>
-            <body id="top"></body>
             <hr>
-            <table id="price-table">
+            <table id="total-table">
                 <tr id="header-row">
-                    <td> Picture 1</td>
-                    <td> Picture 2</td>
-                    <td> Picture 3</td>
-                    <td> Picture 4</td>
+                    <th> Product Name</th>
+                    <th> Mean Price</th>
+                    <th> Quantity</th>
+                    <th> Total</th>
                 </tr>
-                <tr id="price-row">
+                <tr id="total-row">
                     <td>
-                        <p> Description 1</p>
+                        <p id="product"> Games</p>
                     </td>
                     <td>
-                        <p> Description 1</p>
+                        <p id="price"> 000</p>
                     </td>
                     <td>
-                        <p> Description 1</p>
+                        <p id="quantity"> 000</p>
                     </td>
                     <td>
-                        <p> Description 1</p>
+                        <p id="subtotal"> 00.00</p>
                     </td>
                 </tr>
+                <tr>
+                    <td></td><td></td><td></td>
+                    <td><p id="TPS"> 0.00</p></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td>
+                    <td><p id="TVQ"> 00.00</p></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td>
+                    <td><p id="total"> 0.00</p></td>
+                </tr>
+
             </table>
 
-            <table id="payment-tabel">
+            <table id="payment-table">
                 <tr id="header-row">
                     <td> Credit Card Info</td>
                     <td> Shipping Address</td>
@@ -106,5 +118,6 @@
 
 </body>
 <script src="../js/main2.js"></script>
+<script src="../js/invoice.js"></script>
 
 </html>
