@@ -76,108 +76,113 @@
             <hr>
             <h1>Finalise Payment</h1>
             <hr>
-            <table id="payment-table">
-                <tr id="header-row">
-                    <th> Credit Card Info</th>
-                    <th> Shipping Address</th>
-                </tr>
-                <tr>
-                    <td>
-                        <form id="creditcard">
-                            <p>
-                                <label>* Card Number</label>
-                            </p>
-                            <p>
-                                <input type="text" name="cardnbr" placeholder="1111/1111/1111/1111">
-                            </p>
-                            <p>
-                                <label>* CVV</label>
-                            </p>
-                            <p>
-                                <input type="text" name="cvv" placeholder="222">
-                            </p>
-                            <p>
-                                <label>* Name on the Card</label>
-                            </p>
-                            <p>
-                                <input type="text" name="cardholder" placeholder="Aaaa Aaaa">
-                            </p>
-                            <p>
-                                <label>* Expirantion</label>
-                            </p>
-                            <p>
-                                <input type="text" name="expiration" placeholder="dd/yy">
-                            </p>
-                            <p>
-                                <button id="clear-form">Clear</button>
-                            </p>
+            <form>
+                <table id="payment-table">
+                    <tr id="header-row">
+                        <th> Credit Card Info</th>
+                        <th> Shipping Address</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="creditcard">
+                                <p>
+                                    <label>* Card Number</label>
+                                </p>
+                                <p>
+                                    <input type="text" name="cardnbr" placeholder="1111/1111/1111/1111" required="true">
+                                </p>
+                                <p>
+                                    <label>* CVV</label>
+                                </p>
+                                <p>
+                                    <input type="text" name="cvv" placeholder="222" required="true">
+                                </p>
+                                <p>
+                                    <label>* Name on the Card</label>
+                                </p>
+                                <p>
+                                    <input type="text" name="cardholder" placeholder="Aaaa Aaaa" required="true">
+                                </p>
+                                <p>
+                                    <label>* Expirantion</label>
+                                </p>
+                                <p>
+                                    <input type="text" name="expiration" placeholder="dd/yy" required="true">
+                                </p>
+                                <p>
+                                    <button id="clear-form">Clear</button>
+                                </p>
 
-                            <h2>Total Purchased</h2>
-                            </p>
+                                <h2>Total Purchased</h2>
+                                </p>
+                                <p>
+                                    <input type="text" name="total" disabled="true" id="total-purchased">
+                                </p>
+                                <p>
+                                    Show terms
+                                </p>
+                                <p>
+                                    <input type="checkbox" id="agree-terms" required="true">
+                                    *Agree Terms and Conditions
+                                </p>
+                            </div>
+                        </td>
+                        <td>
+                            <div id="shipping">
+                                <p>
+                                    <label>* Name</label>
+                                </p>
+                                <p>
+                                    <input type="text" name="name" required="true">
+                                </p>
+                                <p>
+                                    <label>* Address</label>
+                                </p>
+                                <p>
+                                    <input type="text" name="address" required="true">
+                                </p>
+                                <p>
+                                    <label>Address Line 2</label>
+                                </p>
+                                <p>
+                                    <input type="text" name="address2">
+                                </p>
+                                <p>
+                                    <label>* City</label>
+                                </p>
+                                <p>
+                                    <input type="text" name="city" required="true">
+                                </p>
+                                <p>
+                                    <label>* Postal Code</label>
+                                </p>
+                                <p>
+                                    <input type="text" name="postalcode" required="true">
+                                </p>
+                                <p>
+                                    <label>* Province</label>
+                                </p>
+                                <p>
+                                    <input type="text" name="province" required="true">
+                                </p>
+                                <p>
+                                    <label>Country</label>
+                                </p>
+                                <p>
+                                    <input type="text" name="country">
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
                             <p>
-                                <input type="text" name="total">
+                                <button type="submit" id="make-payment">Make Payment</button>
                             </p>
-                            <p>
-                                Show terms
-                            </p>
-                            <input type="checkbox" id="agree-terms">
-                            *Agree Terms and Conditions
-                        </form>
-                    </td>
-                    <td>
-                        <form id="shipping">
-                            <p>
-                                <label>* Name</label>
-                            </p>
-                            <p>
-                                <input type="text" name="name">
-                            </p>
-                            <p>
-                                <label>* Address</label>
-                            </p>
-                            <p>
-                                <input type="text" name="address">
-                            </p>
-                            <p>
-                                <label>Address Line 2</label>
-                            </p>
-                            <p>
-                                <input type="text" name="address2">
-                            </p>
-                            <p>
-                                <label>* City</label>
-                            </p>
-                            <p>
-                                <input type="text" name="city">
-                            </p>
-                            <p>
-                                <label>* Postal Code</label>
-                            </p>
-                            <p>
-                                <input type="text" name="postalcode">
-                            </p>
-                            <p>
-                                <label>* Province</label>
-                            </p>
-                            <p>
-                                <input type="text" name="province">
-                            </p>
-                            <p>
-                                <label>Country</label>
-                            </p>
-                            <p>
-                                <input type="text" name="country">
-                            </p>
-                        </form>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <p>
-                            <button id="make-payment">Make Payment</button>
-                        </p>
-                    </td>
-                </tr>
+                        </td>
+                    </tr>
+            </form>
+            </table>
             </table>
         </div>
         <hr>
