@@ -48,57 +48,134 @@
                     </td>
                 </tr>
                 <tr>
-                    <td></td><td></td><td></td>
-                    <td><p id="TPS"> 0.00</p></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <p id="TPS"> 0.00</p>
+                    </td>
                 </tr>
                 <tr>
-                    <td></td><td></td><td></td>
-                    <td><p id="TVQ"> 00.00</p></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <p id="TVQ"> 00.00</p>
+                    </td>
                 </tr>
                 <tr>
-                    <td></td><td></td><td></td>
-                    <td><p id="total"> 0.00</p></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <p id="total"> 0.00</p>
+                    </td>
                 </tr>
 
             </table>
-
+            <hr>
+            <h1>Finalise Payment</h1>
+            <hr>
             <table id="payment-table">
                 <tr id="header-row">
-                    <td> Credit Card Info</td>
-                    <td> Shipping Address</td>
+                    <th> Credit Card Info</th>
+                    <th> Shipping Address</th>
                 </tr>
-                <tr id="price-row">
+                <tr>
                     <td>
                         <form id="creditcard">
                             <p>
                                 <label>* Card Number</label>
+                            </p>
+                            <p>
                                 <input type="text" name="cardnbr" placeholder="1111/1111/1111/1111">
                             </p>
                             <p>
                                 <label>* CVV</label>
+                            </p>
+                            <p>
                                 <input type="text" name="cvv" placeholder="222">
                             </p>
                             <p>
                                 <label>* Name on the Card</label>
+                            </p>
+                            <p>
                                 <input type="text" name="cardholder" placeholder="Aaaa Aaaa">
                             </p>
                             <p>
                                 <label>* Expirantion</label>
+                            </p>
+                            <p>
                                 <input type="text" name="expiration" placeholder="dd/yy">
                             </p>
                             <p>
-                                <a>Clear</a>
+                                <button id="clear-form">Clear</button>
                             </p>
 
-                            <label>Total Purchased</label>
-                            <input type="text" name="total">
-
+                            <h2>Total Purchased</h2>
+                            </p>
+                            <p>
+                                <input type="text" name="total">
+                            </p>
+                            <p>
+                                Show terms
+                            </p>
+                            <input type="checkbox" id="agree-terms">
+                            *Agree Terms and Conditions
                         </form>
                     </td>
                     <td>
                         <form id="shipping">
-
+                            <p>
+                                <label>* Name</label>
+                            </p>
+                            <p>
+                                <input type="text" name="name">
+                            </p>
+                            <p>
+                                <label>* Address</label>
+                            </p>
+                            <p>
+                                <input type="text" name="address">
+                            </p>
+                            <p>
+                                <label>Address Line 2</label>
+                            </p>
+                            <p>
+                                <input type="text" name="address2">
+                            </p>
+                            <p>
+                                <label>* City</label>
+                            </p>
+                            <p>
+                                <input type="text" name="city">
+                            </p>
+                            <p>
+                                <label>* Postal Code</label>
+                            </p>
+                            <p>
+                                <input type="text" name="postalcode">
+                            </p>
+                            <p>
+                                <label>* Province</label>
+                            </p>
+                            <p>
+                                <input type="text" name="province">
+                            </p>
+                            <p>
+                                <label>Country</label>
+                            </p>
+                            <p>
+                                <input type="text" name="country">
+                            </p>
                         </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p>
+                            <button id="make-payment">Make Payment</button>
+                        </p>
                     </td>
                 </tr>
             </table>
@@ -109,11 +186,16 @@
     </div>
 
     <footer>
-        <a href="https://www.facebook.com/" target="_blank"><img src="../media/welcome/facebook.png" height="32px" width="32px"></a>
-        <a href="https://www.instagram.com/" target="_blank"><img src="../media/welcome/instagram.png" height="32px" width="32px"></a>
-        <a href="https://www.linkedin.com/" target="_blank"><img src="../media/welcome/linkedin.png" height="32px" width="32px"></a>
-        <a href="https://www.snapchat.com/" target="_blank"><img src="../media/welcome/snapchat.png" height="32px" width="32px"></a>
-        <a href="https://twitter.com/" target="_blank"><img src="../media/welcome/twitter.png" height="32px" width="32px"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="../media/welcome/facebook.png" height="32px"
+                width="32px"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="../media/welcome/instagram.png" height="32px"
+                width="32px"></a>
+        <a href="https://www.linkedin.com/" target="_blank"><img src="../media/welcome/linkedin.png" height="32px"
+                width="32px"></a>
+        <a href="https://www.snapchat.com/" target="_blank"><img src="../media/welcome/snapchat.png" height="32px"
+                width="32px"></a>
+        <a href="https://twitter.com/" target="_blank"><img src="../media/welcome/twitter.png" height="32px"
+                width="32px"></a>
     </footer>
 
 </body>

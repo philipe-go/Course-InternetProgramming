@@ -156,10 +156,48 @@ select{
     width: 100%;
 }
 
-#total-row{
-    align-items: left;
-}
-
 #total-table th{
     font-size: 20px;
+}
+
+#payment-table th{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+}
+#payment-table td{
+    width: 50%;
+    text-align: start;
+    vertical-align: top;
+}
+
+#creditcard , #shipping{
+    width: 90%;
+    margin: auto;
+}
+
+#creditcard input, #shipping input{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+#clear-form, #make-payment{
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 3px;
+    margin: auto;
+    border: 0.5px black solid;
+}
+
+#clear-form:hover, #make-payment:hover{
+    background-color:lightslategray ;
+    cursor: pointer;
+}
+
+#agree-terms {
+float: left;
+display: inline;
+
 }

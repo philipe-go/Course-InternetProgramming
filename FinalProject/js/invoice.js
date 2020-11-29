@@ -2,6 +2,11 @@ $(document).ready(()=>{
     var invoice = parseFloat(sessionStorage.getItem('invoice'));
     var quantity = parseFloat(sessionStorage.getItem('quantity'));
 
+    if (invoice === NaN || quantity === NaN)
+    {
+        invoice = 0;
+        quantity = 0;
+    }
     $('#price').text((invoice / quantity).toFixed(2));
     $('#quantity').text(quantity);
     
@@ -12,10 +17,4 @@ $(document).ready(()=>{
     $('#TVQ').text('TVQ: '+tvq.toFixed(2));
     let total = invoice + tps + tvq;
     $('#total').text('TOTAL: '+total.toFixed(2));
-
-
-
-
-
-
 })
