@@ -176,6 +176,11 @@ select{
     margin: auto;
 }
 
+#creditcard input[type=checkbox]{
+    width: 20px;
+    height: 5px;
+}
+
 #creditcard input, #shipping input{
     width: 100%;
     height: 30px;
@@ -194,9 +199,4 @@ select{
 #clear-form:hover, #make-payment:hover{
     background-color:lightslategray ;
     cursor: pointer;
-}
-
-#agree-terms {
-float: left;
-display: inline;
 }

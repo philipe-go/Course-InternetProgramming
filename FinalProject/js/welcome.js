@@ -1,4 +1,7 @@
 $(document).ready(() => {
+    sessionStorage.setItem('invoice', 0.0);
+    sessionStorage.setItem('quantity', 0.0);
+    
     var wrong = $('#wrong-user').text();
     $('#wrong-user').text("");
 

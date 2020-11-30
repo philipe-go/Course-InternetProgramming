@@ -89,7 +89,7 @@
                                     <label>* Card Number</label>
                                 </p>
                                 <p>
-                                    <input type="text" name="cardnbr" placeholder="1111/1111/1111/1111" required="true">
+                                    <input type="text" name="cardNumber" placeholder="1111 1111 1111 1111" required="true">
                                 </p>
                                 <p>
                                     <label>* CVV</label>
@@ -98,7 +98,7 @@
                                     <input type="text" name="cvv" placeholder="222" required="true">
                                 </p>
                                 <p>
-                                    <label>* Name on the Card</label>
+                                    <label>* Credit Card Holder</label>
                                 </p>
                                 <p>
                                     <input type="text" name="cardholder" placeholder="Aaaa Aaaa" required="true">
@@ -107,10 +107,10 @@
                                     <label>* Expirantion</label>
                                 </p>
                                 <p>
-                                    <input type="text" name="expiration" placeholder="dd/yy" required="true">
+                                    <input type="text" name="expDate" placeholder="mm/yy" required="true">
                                 </p>
                                 <p>
-                                    <button id="clear-form">Clear</button>
+                                    <button id="clear-form" formnovalidate>Clear</button>
                                 </p>
 
                                 <h2>Total Purchased</h2>
@@ -121,10 +121,9 @@
                                 <p>
                                     Show terms
                                 </p>
-                                <p>
-                                    <input type="checkbox" id="agree-terms" required="true">
-                                    *Agree Terms and Conditions
-                                </p>
+                                <div>
+                                    <label><input type="checkbox" required="true"/>*Agree Terms and Conditions</label>
+                                </div>
                             </div>
                         </td>
                         <td>
@@ -157,7 +156,7 @@
                                     <label>* Postal Code</label>
                                 </p>
                                 <p>
-                                    <input type="text" name="postalcode" required="true">
+                                    <input type="text" name="postalCode" required="true">
                                 </p>
                                 <p>
                                     <label>* Province</label>

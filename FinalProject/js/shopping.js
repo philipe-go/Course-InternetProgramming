@@ -1,12 +1,11 @@
-var invoice = parseFloat(sessionStorage.setItem('invoice', invoice));
-var quantity = parseFloat(sessionStorage.setItem('quantity',quantity));
-
 $(document).ready(() => {
     var checks = document.querySelectorAll('input[type="checkbox"]');
     var totalprice1 = 0.0;
     var totalprice2 = 0.0;
     var maxItems1 = 4;
     var maxItems2 = 4;
+    var invoice = 0.0;
+    var quantity = 0.0;
 
     $('select').on('focus', (e) => {
         var parent = findParent(e.target);

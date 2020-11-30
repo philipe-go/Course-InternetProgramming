@@ -1,13 +1,49 @@
 $(document).ready(()=>{
+
+    AddInvoice();
+    var fields = document.querySelectorAll('input');
+    
+    $('#clear-form').click((e)=>{
+        e.preventDefault();
+        fields.forEach(t => {
+            if (t.type == 'text') t.value = "";
+        });
+
+        sessionStorage.setItem('invoice', 0.0);
+        sessionStorage.setItem('quantity', 0.0);
+
+        AddInvoice();
+
+        alert("Order cancelled");
+    });
+
+    $('#make-payment').click(()=>{
+        alert("Thank you for your shopping");
+    });
+
+    var pattern = {
+        cardNumber: /^([\d]{16,17})$/,
+        cvv: /^([0-9]{3})$/,
+        expDate: /^([0-9]{2})(\/)?([0-9]{2})$/,   
+        postalCode: /^([a-z][0-9]{3})([a-z][0-9]{3})$/
+    }
+
+    fields.forEach(t => {
+        if (t.type == 'text') {
+            t.addEventListener("keyup", (e) => {
+                RegexCheck(e.target, pattern[e.target.attributes.name.value]);
+            })        
+        }
+    });
+})
+
+function AddInvoice(){
     var invoice = parseFloat(sessionStorage.getItem('invoice'));
     var quantity = parseFloat(sessionStorage.getItem('quantity'));
 
-    if (invoice === NaN || quantity === NaN)
-    {
-        invoice = 0;
-        quantity = 0;
-    }
-    $('#price').text((invoice / quantity).toFixed(2));
+    if (quantity != 0) $('#price').text((invoice / quantity).toFixed(2));
+    else $('#price').text((0).toFixed(2));
+
     $('#quantity').text(quantity);
     
     $('#subtotal').text('Subtotal: '+invoice.toFixed(2));
@@ -19,17 +55,15 @@ $(document).ready(()=>{
     $('#total').text('TOTAL: '+total.toFixed(2));
 
     $('#total-purchased').val("$ "+total.toFixed(2));
+};
 
-    var pattern = {
-        telephone: /^\(?(\d{3})\)?(\d{3})(\-)?(\d{4})$/,
-        username: /^[\w\s]{5,12}$/i,
-        pass: /^[\w-@]{8,20}$/,   
-        slug: /^[a-z\d-]{3,20}$/,
-        email: /^([\w\.-]+)@([\w-]+)\.([a-z]{2,8})(\.[\w]{2,8})?$/ //(username)@(domain).(extension).(something)
+function RegexCheck(field, regex){
+    if (regex.test(field.value)) {
+        field.className = "invalid";
+        alert(field.attributes.name.value+" invalid");
+        field.value = ""; 
     }
-
-    $('#make-payment').click(()=>{
-
-
-    });
-})
+    else { 
+        field.className = "valid";
+    }
+};
