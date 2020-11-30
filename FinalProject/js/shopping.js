@@ -81,8 +81,8 @@ $(document).ready(() => {
     function updateInvoice() {
         invoice = totalprice1 + totalprice2;
         quantity = 8 - (maxItems1 + maxItems2);
-        sessionStorage.setItem('invoice', invoice);
-        sessionStorage.setItem('quantity', quantity);
+        localStorage.setItem('invoice', invoice);
+        localStorage.setItem('quantity', quantity);
     };
 })
 

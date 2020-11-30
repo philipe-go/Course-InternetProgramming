@@ -1,6 +1,7 @@
 $(document).ready(()=>{
 
     AddInvoice();
+
     var fields = document.querySelectorAll('input');
     
     $('#clear-form').click((e)=>{
@@ -9,8 +10,8 @@ $(document).ready(()=>{
             if (t.type == 'text') t.value = "";
         });
 
-        sessionStorage.setItem('invoice', 0.0);
-        sessionStorage.setItem('quantity', 0.0);
+        localStorage.setItem('invoice', 0.0);
+        localStorage.setItem('quantity', 0.0);
 
         AddInvoice();
 
@@ -18,28 +19,43 @@ $(document).ready(()=>{
     });
 
     $('#make-payment').click(()=>{
-        alert("Thank you for your shopping");
+        var flag = 1;
+        fields.forEach(t => {
+            if ((t.type == 'text') && (t.required == true) && (t.value == "")) 
+            { 
+                flag = 0;
+            } 
+        });
+        if (flag == 1) alert("Thank you for your shopping");
+        else alert("Mandatory fields not filled");
     });
 
     var pattern = {
-        cardNumber: /^([\d]{16,17})$/,
-        cvv: /^([0-9]{3})$/,
+        cardNumber: /^[0-9]{15,16}$/,
+        cvv: /^[0-9]{3}$/,
         expDate: /^([0-9]{2})(\/)?([0-9]{2})$/,   
-        postalCode: /^([a-z][0-9]{3})([a-z][0-9]{3})$/
+        postalCode: /^([\w]{3})(\-)?(\s)?([\w]{3})$/
+    }
+
+    var message = {
+        cardNumber: 'Please enter a valid card number (15 or 16 numbers without spaces)',
+        cvv: 'Please enter a valid cvv (3 numeric digits)',
+        expDate: 'Please enter a valid expire date (MM/YY)',   
+        postalCode: 'Please enter a valid postal code (B0B-4A4)'
     }
 
     fields.forEach(t => {
         if (t.type == 'text') {
-            t.addEventListener("keyup", (e) => {
-                RegexCheck(e.target, pattern[e.target.attributes.name.value]);
+            t.addEventListener("focusout", (e) => {
+                RegexCheck(e.target, pattern[e.target.attributes.name.value], message[e.target.attributes.name.value]);
             })        
         }
     });
 })
 
 function AddInvoice(){
-    var invoice = parseFloat(sessionStorage.getItem('invoice'));
-    var quantity = parseFloat(sessionStorage.getItem('quantity'));
+    var invoice = parseFloat(localStorage.getItem('invoice'));
+    var quantity = parseFloat(localStorage.getItem('quantity'));
 
     if (quantity != 0) $('#price').text((invoice / quantity).toFixed(2));
     else $('#price').text((0).toFixed(2));
@@ -57,13 +73,9 @@ function AddInvoice(){
     $('#total-purchased').val("$ "+total.toFixed(2));
 };
 
-function RegexCheck(field, regex){
-    if (regex.test(field.value)) {
-        field.className = "invalid";
-        alert(field.attributes.name.value+" invalid");
-        field.value = ""; 
-    }
-    else { 
-        field.className = "valid";
+function RegexCheck(field, regex, message){
+    if (!regex.test(field.value) && field.value!="") {
+        alert(message);
+        field.value = "";
     }
 };
