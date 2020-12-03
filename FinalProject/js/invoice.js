@@ -12,6 +12,8 @@ $(document).ready(()=>{
 
         localStorage.setItem('invoice', 0.0);
         localStorage.setItem('quantity', 0.0);
+        localStorage.setItem('maxItems1', 4.0);
+        localStorage.setItem('maxItems2', 4.0);
 
         AddInvoice();
 

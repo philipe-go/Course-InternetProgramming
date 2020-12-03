@@ -2,10 +2,38 @@ $(document).ready(() => {
     var checks = document.querySelectorAll('input[type="checkbox"]');
     var totalprice1 = 0.0;
     var totalprice2 = 0.0;
-    var maxItems1 = 4;
-    var maxItems2 = 4;
+    var maxItems1 = parseFloat(localStorage.getItem('maxItems1'));
+    var maxItems2 = parseFloat(localStorage.getItem('maxItems2'));
     var invoice = 0.0;
     var quantity = 0.0;
+
+    //LOAD PICTURES
+    var pictures = document.querySelectorAll('.gallery-1 #picture');
+    var index = 0;
+    pictures.forEach(t => {
+        $(t).css("height","400px");
+        $(t).css("width","400px");
+        $(t).css("background-image","url(../media/BW/pic"+index+".jpeg)");
+        $(t).css("background-size","contain");
+        $(t).css("background-repeat","no-repeat");
+        $(t).css("background-position","center");
+
+        index ++;
+    });
+
+    index = 0;
+    pictures = document.querySelectorAll('.gallery-2 #picture');
+    pictures.forEach(t => {
+        $(t).css("height","400px");
+        $(t).css("width","400px");
+        $(t).css("background-image","url(../media/Color/pic"+index+".jpeg)");
+        $(t).css("background-size","contain");
+        $(t).css("background-repeat","no-repeat");
+        $(t).css("background-position","center");
+
+        index ++;
+    });
+
 
     $('select').on('focus', (e) => {
         var parent = findParent(e.target);
@@ -41,7 +69,6 @@ $(document).ready(() => {
     $('#add-cart2').click((e) => {
         $('#gallery2-total').val("");
         updateInvoice();
-
     });
 
     function addPrice(gallery, amount, price) {
@@ -83,6 +110,9 @@ $(document).ready(() => {
         quantity = 8 - (maxItems1 + maxItems2);
         localStorage.setItem('invoice', invoice);
         localStorage.setItem('quantity', quantity);
+
+        localStorage.setItem('maxItems1', maxItems1);
+        localStorage.setItem('maxItems2', maxItems2);
     };
 })
 

@@ -42,14 +42,18 @@ $(document).ready(() => {
 
     $('.searchBtn').click(() => {
         if (tempItem != null) {
-            var item = document.querySelectorAll('#item-name');
-
+            var item = document.querySelectorAll('#description-row h2');
+            
             item.forEach(it => {
                 var title = it.textContent.toLowerCase();
                 if (title.trim() === tempItem.trim()) {
                     var row = it.parentElement.parentElement;
                     $(row).show();
                     $('.search').val("");
+                    let loc = $(row).offset().top - 300;
+                    console.log(loc);
+
+                    $('.container').animate({scrollTop:loc}, 'slow');
                 }
             });
         }
