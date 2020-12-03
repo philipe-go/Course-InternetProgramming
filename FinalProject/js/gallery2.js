@@ -10,6 +10,11 @@ $(document).ready(()=>{
         $(t).css("background-size","contain");
         $(t).css("background-repeat","no-repeat");
         $(t).css("background-position","center");
+        $(t).attr("href", "../media/Color/pic"+index+".jpeg");
+
+        t.addEventListener('dblclick', () => {
+            window.open($(t).attr('href'), "target:_black");
+        });
 
         index ++;
     });

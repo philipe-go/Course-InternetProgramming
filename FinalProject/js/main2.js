@@ -28,6 +28,10 @@ $(document).ready(() => {
             let row = e.target.parentElement.parentElement.parentElement.querySelector('#description-row');
             $(row).toggle();
         });
+        item.addEventListener('dblclick', (e) => {
+            let row = e.target.parentElement.parentElement.parentElement.querySelector('#description-row');
+            $(row).show();
+        });
     });
 
     //SEARCH
