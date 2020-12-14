@@ -1,0 +1,83 @@
+body{
+    background-color: gray;
+}
+
+.container{
+    margin: auto;
+}
+
+.head h1{
+    border: 2px black solid;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.head, .currency, .convertion, .result{
+    align-content: center;
+    border: 1px black solid;
+    text-align: center;
+    width: 1000px;
+}
+
+.currency{
+    padding: 30px 0 30px 0;
+    line-height: 3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+select{
+    width: 100px;
+}
+
+#display input{
+    width: 300px;
+}
+
+.convertion{
+    padding: 90px 0 90px 0;
+    line-height: 3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.convertion input[type="text"]{
+    width: 250px;
+}
+
+.result{
+    padding: 30px 0 30px 0;
+}
+
+.result form{
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#money-input{
+    width: 200px;
+}
+
+#input-currency, #output-currency{
+    width: 80px;
+}
+
+
+#convertion-result{
+    background-color: gray;
+    width: 200px;
+}
+
+#convertBtn, #resetBtn{
+    width: 120px;
+}
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Final Exam</title>
+    <link rel="styleSheet" type="text/css" href="./css/main.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <h1>INTERNATIONAL <br /> EXCHANGE OFFICE</h1>
+        </div>
+        <br>
+        <div class="currency">
+            <div id="currency-select">
+                <form>
+                    <label>Select Currency:</label>
+                    <br>
+                    <select>
+                        <option value="none"></option>
+                        <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                        <option value="France">France</option>
+                    </select>
+                </form>
+            </div>
+            <div id="display">
+                <input type="text" disabled>
+                <br>
+                <input type="text" disabled>
+            </div>
+        </div>
+        <br>
+        <div class="convertion">
+            <form>
+                <input type="radio" value="disabled id="top-radio">
+                <input type="text" disabled>
+                <br>
+                <input type="radio" disabled id="botton-radio">
+                <input type="text" disabled>
+            </form>
+        </div>
+        <br>
+        <div class="result">
+            <form>
+                <input type="text" id="money-input">
+                <input type="text" id="input-currency" disabled>
+                <input type="submit" id="convertBtn" value="Convert to >>" disabled>
+                <input type="text" id="input-currency" disabled>
+                <input type="text" id="convertion-result" disabled>
+                <input type="submit" id="resetBtn" value="Reset">
+            </form>
+        </div>
+    </div>
+</body>
+<script src="./js/main.js"></script>
+
+</html>
