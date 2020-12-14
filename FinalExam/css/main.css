@@ -33,7 +33,7 @@ select{
     width: 100px;
 }
 
-#display input{
+.display input{
     width: 300px;
 }
 
@@ -69,6 +69,7 @@ select{
 
 #convertion-result{
     background-color: gray;
+    color: black;
     width: 200px;
 }
 

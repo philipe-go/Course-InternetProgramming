@@ -16,11 +16,11 @@
         </div>
         <br>
         <div class="currency">
-            <div id="currency-select">
+            <div class="currency-select">
                 <form>
                     <label>Select Currency:</label>
                     <br>
-                    <select>
+                    <select name="convertion" id="convertion">
                         <option value="none"></option>
                         <option value="USA">USA</option>
                         <option value="UK">UK</option>
@@ -28,29 +28,28 @@
                     </select>
                 </form>
             </div>
-            <div id="display">
-                <input type="text" disabled>
-                <br>
-                <input type="text" disabled>
+            <div class="display">
+                <input type="text" disabled id="cadTxt" value=>
+                <input type="text" disabled id="otherTxt"  value=>
             </div>
         </div>
         <br>
         <div class="convertion">
             <form>
-                <input type="radio" value="disabled id="top-radio">
-                <input type="text" disabled>
+                <input type="radio" name="group1" value="cad-to" disabled id="top-radio">
+                <input type="text" disabled id="top-radioTxt">
                 <br>
-                <input type="radio" disabled id="botton-radio">
-                <input type="text" disabled>
+                <input type="radio" name="group1" value="other-to" disabled id="botton-radio">
+                <input type="text" disabled id="botton-radioTxt">
             </form>
         </div>
         <br>
         <div class="result">
             <form>
-                <input type="text" id="money-input">
+                <input type="text" id="money-input" placeholder="0" disabled>
                 <input type="text" id="input-currency" disabled>
                 <input type="submit" id="convertBtn" value="Convert to >>" disabled>
-                <input type="text" id="input-currency" disabled>
+                <input type="text" id="output-currency" disabled>
                 <input type="text" id="convertion-result" disabled>
                 <input type="submit" id="resetBtn" value="Reset">
             </form>
